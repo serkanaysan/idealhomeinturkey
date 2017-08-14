@@ -1,0 +1,113 @@
+@media screen and (max-width: 769px) {
+
+	.home-cover-item{
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
+		background-size: contain;
+	}
+	
+	.properties-table .properties-card .properties-card-image{
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
+		background-size: contain;
+	}
+	
+	#single .slider .slider-image{
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
+		background-size: contain;
+	}
+	
+	.contactpage-addressinfo{
+	    padding-left: 55px!important;
+	}
+	.contactpage-addressinfo span i{
+		font-size:40px!important;
+	}
+	
+	#header {
+		border-bottom: 0!important;
+	}
+	
+}
+	
+@media screen and (min-width: 769px) and (max-width: 992px) {
+	
+	.gm-style img {
+		max-width: 100%!important;
+	}
+	.map-info .map-info-title{
+		text-align: center;
+		font-size: 1.4em;
+		margin-bottom: 0;
+	}
+	.map-info .map-info-price{
+	    text-align: center!important;
+		font-size: 1.2em;
+	}
+	.map-info .map-info-coast{
+		overflow: visible;
+	}
+	#footer .footer-title{
+		margin-top:0px!important;
+	}
+	
+	#header .header-left .logo {
+		margin-top: 0px!important;
+		padding:8px!important;
+	}
+
+	#home-cover-content {
+		width: 100%;
+		padding: 0 15px;
+		text-align: left;
+		top: auto;
+		left: 0;
+		bottom: 0;
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+		padding: 15px;
+		margin: 0
+	}
+	#home-cover-content h1 {
+		white-space: normal
+	}
+	#home-cover-content .btn-home-cover {
+		margin: 0 10px 0 0;
+		padding: 10px 25px;
+		font-size: 18px
+	}
+	#why .btn-tab {
+		float: none;
+		display: block !important;
+		width: auto !important;
+		padding: 2px 0
+	}
+	#why .tab-item p {
+		margin: 10px 0
+	}
+	#footer .footer-social {
+		text-align: center;
+		margin-top: 20px
+	}
+	#header {
+		position: fixed !important;
+		top: 0;
+		left: 0;
+		z-index: 999
+	}
+	.header-left {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%)
+	}
+	body {
+		padding-top: 55px;
+	}
+
+}

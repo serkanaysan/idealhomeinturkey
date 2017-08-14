@@ -1,0 +1,335 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, sub, sup, tt, var, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, textarea { margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; }
+/* HTML5 reset-browser */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { font-family: 'Roboto', sans-serif; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+a { text-decoration: none }
+:focus { outline: 0 }
+.clear { clear: both }
+img { max-width: 100%; height: auto; }
+.basvuru{display:none;}
+.wrapper { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;background-size: cover; background-repeat: no-repeat; overflow: hidden; }
+.form-holder { line-height: 20px; text-align: center; width: 315px; font-size: 12px; position: absolute; right: 0px; bottom: 0px; top: 0px; box-sizing: border-box; padding: 30px 30px 5px; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9b6b18+0,643304+48,9b6b18+100&0.9+1,0.9+100 */
+/* background: -moz-linear-gradient(top, rgba(155,107,24,0.9) 0%, rgba(154,106,24,0.9) 1%, rgba(100,51,4,0.9) 48%, rgba(155,107,24,0.9) 100%); */ /* FF3.6-15 */ /* background: -webkit-linear-gradient(top, rgba(155,107,24,0.9) 0%, rgba(154,106,24,0.9) 1%, rgba(100,51,4,0.9) 48%, rgba(155,107,24,0.9) 100%); */ /* Chrome10-25,Safari5.1-6 */ /* background: linear-gradient(to bottom, rgba(155,107,24,0.9) 0%, rgba(154,106,24,0.9) 1%, rgba(100,51,4,0.9) 48%, rgba(155,107,24,0.9) 100%); */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e69b6b18', endColorstr='#e69b6b18', GradientType=0 ); */ /* IE6-9 */
+background-color: rgba(0,0,0,0.8);
+background-color: rgba(158, 0, 0, 0.85);
+background-color: rgba(48,57,0,0.80);
+/* background: url(../images/form_bg.png) 25%; */
+background-color: #B96713;
+background-color: #747D34;
+}
+.form-holder .form-title { color: #fff; text-align: center; font-size: 17px; line-height: 25px; padding-bottom: 10px; letter-spacing: 1px;  font-weight: 500; }
+.form-holder .form-title strong { font-size: 26px; font-weight: 500; }
+.tesekkurler { display: none; padding: 20px 10px; text-align: center }
+.tel { width: 100%; display: inline-block; margin: 35px 0px 15px; }
+.tel a { color: #fff; font-size: 2em; padding: 0px; display: inline-block; font-weight: 800; letter-spacing: -1px; }
+.menu-wrapper { position: absolute; top: 0;left: 230px;}
+.menu { background: url(../images/menu-bg.png)no-repeat; width: 423px; height: 51px; box-sizing: border-box; padding-left: 80px; z-index: 4; position: absolute; left: 0px; right: 0; top: 0px; text-align: center; margin: 0 auto; background-size: 100%; }
+.menu ul li { float: left;margin-left: 7px;}
+.menu ul li:nth-child(1) { margin-left: 0px; }
+.menu ul li a { color: #fff; font-size: 15px; line-height: 45px; display: block; padding: 0 15px; font-weight: 400; margin-left: 3px;font-weight: bold;}
+.menu ul li a.active { color: #eee; }
+.sub-page { position: absolute; color: #FFF; max-width: 55%; font-size: 10pt; line-height: 1.5; left: -100%; height: auto; top: 0px; z-index: 5; 
+            background-color:rgba(48,57,0,0.70); -webkit-transition: all 1.3s ease; -moz-transition: all 1.3s ease; -o-transition: all 1.3s ease; -ms-transition: all 1.3s ease; transition: all 1.3s ease; bottom: 0px;width: 650px;}
+.sub-page h3 { margin: 5px 0; }
+.sub-page-open { left: 0; }
+.sub-title { color: #FFFFFF; /*+text-shadow:1px 1px 2px #307180;*/ -moz-text-shadow: 1px 1px 2px #307180; -webkit-text-shadow: 1px 1px 2px #307180; -o-text-shadow: 1px 1px 2px #307180; text-shadow: 1px 1px 2px #73182A; /*[empty]float:;*/ padding: 5px; font-weight: 300; font-size: 16px; background: #ab1735; height: 40px; border-bottom: 5px solid #5d1826; line-height: 40px; padding-left: 30px; }
+.close-btn { position: absolute; z-index: 2222222222; color: #000; display: block; /* float: left; */ text-align: center; margin: auto; display: inline-block; width: 40px; margin: 1%; cursor: pointer; right: -30px;top: 110px; height: 30px;}
+.close-btn A { display: block; text-align: center; font-size: 30px; font-weight: 300; line-height: 35px; margin-top: 5px; margin: auto; width: 40px; height: 40px; -webkit-border-radius: 60px; -moz-border-radius: 60px; border-radius: 60px; background:#cd1719; color:#fff;}
+.box-inner { box-sizing: border-box;padding: 100px 40px 20px; display: inline-block; font-weight: 300; width: 100%; color: #fff; font-size: 13px;}
+.box-inner p { margin-bottom: 10px;font-size: 16px;}
+.mobil-menu { display: none; }
+.tiles LI { float: left; width: 31%; margin: 1%; position: relative; box-sizing: border-box; padding: 1px; text-align: center; font-size: 15px; border: 4px solid #fff; }
+.tiles LI span { position: absolute; top: 0px; bottom: 0px; left: 0px; background: rgba(171, 23, 53, 0.5); right: 0px; color: #fff; text-align: right; box-sizing: border-box; padding: 5px; font-size: 18px; font-weight: 300; }
+.tiles LI A:hover { opacity: 0.8; }
+.tiles LI IMG { display: block; width: 100%; height: 100px; }
+.sub-page h1 { padding-bottom: 15px; text-align: center; }
+ol, ul { list-style: none; }
+.tiles { position: relative; margin-top: 5px; margin-bottom: 20px; width: 100%; }
+.turkeylogo {margin-top:5px;margin-left:5px;width: 155px; position: absolute; left: 0px; top: 0px; z-index: 5;left: 0px;}
+.bestprice {margin-top:5px;width: 75px; position: absolute; top: 0px; z-index: 5;right: 25%;}
+
+.slogan1_none{ 
+	margin-top: 10px;
+	width:100%; font-size:28px;
+	text-transform: uppercase;
+    background-color: rgba(221, 41, 46, 0.79);
+    color: #fff;
+    font-weight: bold;
+	padding-left:4px;
+	padding-right:4px;
+	display:none;
+}
+.slogan2_none{
+	margin-bottom: 10px;
+	width:100%;
+	font-size:28px;
+	text-transform: uppercase;
+    background-color: rgba(38, 50, 56, 0.59);
+    color: #fff;
+    font-weight: bold;
+	padding-left:4px;
+	padding-right:4px;
+	display:none;
+	}
+.slogan {
+	
+	left:-150%;
+	font-size:40px;
+	text-transform: uppercase;
+    background-color: rgba(38, 50, 56, 0.59);
+    position: absolute;
+    bottom: 185px;
+    color: #fff;
+    font-weight: bold;
+	padding-left:4px;
+	padding-right:4px;
+	
+}
+
+.slogannew {
+	
+	left:-150%;
+	font-size:40px;
+	text-transform: uppercase;
+    background-color: rgba(221, 41, 46, 0.79);
+    position: absolute;
+    bottom: 125px;
+    color: #fff;
+    font-weight: bold;
+	padding-left:4px;
+	padding-right:4px;
+	
+	
+}
+
+.lokasyon { width: 265px; position: absolute; left: 0px;
+left: 37.5%;
+bottom: 67%;
+}
+.form-logo { width: 70%;margin: 50px auto 0px;}
+#iletisim p a {color:#fff;}
+.map{width:100%;}
+.map iframe{
+    width: 100%;
+}
+.metin{font-size:5px; position:absolute; width:75px; left:-100px;}
+
+.contactInfo{
+    width: 100%;
+	color:#fff;
+}
+
+body {
+	background: #fff;
+}
+
+form.formular, .validationEngineContainer {
+	font-family: tahoma, verdana, "sans-serif";
+	font-size: 12px;
+	padding: 20px;
+	border: 1px solid #A5A8B8;
+	width: 300px;
+	margin: 0 auto;
+}
+.formular fieldset {
+	margin-top: 20px;
+	padding: 15px;
+	border: 1px solid #B5B8C8;
+}
+
+.formular legend {
+	font-size: 12px;
+	color: #15428B;
+	font-weight: 900;
+}
+
+.formular fieldset label {
+	float: none;
+	text-align: inherit;
+	display:block;
+	width: auto;
+}
+
+.formular label span {
+	color: #000;
+}
+
+.formular input,.formular select,.formular textarea {
+	display: block;  /* this breaks relative positioning */
+	margin-bottom: 5px;
+}
+
+.formular .text-input {
+	width: 250px;
+	color: #555;
+	padding: 4px;
+	border: 1px solid #B5B8C8;
+	font-size: 14px;
+	margin-top: 4px;
+	background: #FFF repeat-x;
+}
+
+.formular textarea {
+	width: 250px;
+	height: 70px;
+	color: #555;
+	padding: 4px;
+	border: 1px solid #B5B8C8;
+	font-size: 14px;
+	margin-top: 4px;
+	background: #FFF repeat-x;
+}
+
+.formular .infos {
+	background: #FFF;
+	color: #333;
+	font-size: 12px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.formular span.checkbox, .formular .checkbox, .formular .radio {
+	display: inline;
+}
+
+.formular .submit {
+	
+	#border: 1px solid #AAA;
+	padding: 4px;
+	margin-top: 20px;
+	float: right;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.formular hr {
+	clear: both;
+	visibility: hidden;
+}
+
+.formular .fc-error {
+	width: 350px;
+	color: #555;
+	padding: 4px;
+	border: 1px solid #B5B8C8;
+	font-size: 12px;
+	margin-bottom: 15px;
+	background: #FFEAEA;
+}
+
+.formular input[data-prompt-position="inline"] {
+	display: inline;
+}
+
+.footnote {
+	font-size: 11px;
+	color: #666;
+	font-style: italic;
+}
+
+.prompt-target {
+	border: 1px dotted #666;
+	min-height: 21px;
+}
+
+.inline-prompts label>span{
+	display: inline-block;
+	width: 250px;
+}
+
+.inline-prompts .text-input+.formError{
+	margin-left: 10px;
+}
+
+.prompt-summary .inline {
+	display: block;
+}
+
+
+/* Tema */
+.wrapper{
+    #background: url(../imgs/bg.jpg)top left; #background-size: cover;
+}
+.menu{
+    background: url(../imgs/menu-bg.png)no-repeat;
+}
+.form-holder{
+    background-color: rgba(227, 27, 35, 0.89);
+    right: 20px;
+}
+.contact_form{
+	
+}
+.contact_form ul li input{
+    border: 2px solid #c17113;
+}
+.contact_form #submitted{
+    background: rgb(250,250,250); color:#000; border: 1px solid #c17113;
+}
+.lokasyon{
+   left: 30.5%;
+}
+.sub-page {
+    background-color: rgba(193,113,19,0.70);
+}
+#kat-plani{
+     display:none
+}
+#galeri{
+}
+#iletisim{
+}
+@media only screen and (max-width:1599px) {
+.menu{
+    background-size: 350px;
+
+}
+.menu ul li{
+margin-left: 33px;
+}
+
+}
+@media only screen and (max-width:915px) {
+.turkeylogo {
+  left: 0px;
+}
+.menu-wrapper{
+    left: 145px;
+}
+.lokasyon {
+    left: 12.5%;
+}
+
+}
+/*
+@media only screen and (max-width:768px) {
+.wrapper {
+        background-size: 100%; 
+        bottom: inherit;
+        background-position: 15% 0px;
+        background-image: url(mobil-bg.jpg);
+        background-repeat: no-repeat;
+    }
+.form-holder {
+    background-color: rgba(247, 147, 30,1);
+    right: 0px;
+}
+.sub-page{
+    background-color: rgba(247, 147, 30,1);
+}
+}
+*/
+#error-msg {
+  color: red;
+}
+#valid-msg {
+  color: #00C900;
+}
+.phone-error {
+  border: 1px solid #FF7C7C!IMPORTANT;
+}
+.lightbox { display: none; }

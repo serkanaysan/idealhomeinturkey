@@ -1,0 +1,119 @@
+/*FORM*/
+input, textarea, select {
+    font-size: 16px;
+}
+.contact_form UL { margin: 0px; padding: 0px; }
+.contact_form LI { margin: 0px 0px 7px; padding: 0px; list-style: none; font-size: 8pt; position: relative; }
+.contact_form .form-text,
+.contact_form .form-textarea { width: 100%; padding-right: 10px; /*+box-sizing:border-box;*/ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;border: 1px solid #000000; height: 37px; line-height: 32px; padding-left: 8px; font-family: 'Roboto', sans-serif;text-align: justify;
+  direction:rtl;}
+.contact_form .form-textarea { height: 69px; }
+.contact_form LABEL { height: 15px; }
+.form-submit { width: 100% !important; height: 35px; border: 0px; text-align: center;font-size: 15px;color: #fff; margin: auto;font-weight: 600;margin-top: 0;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fafafa+1,fafafa+65,ededed+66,ededed+100 */  
+background: rgb(250,250,250); 
+/* Old browsers */ background: -moz-linear-gradient(top,  rgba(200,6,6,1)30% ,rgba(250,6,6,1));
+/* FF3.6-15 */  background: -webkit-linear-gradient(top,  rgba(200,6,6,1)30% ,rgba(250,6,6,1)); 
+/* Chrome10-25,Safari5.1-6 */  background: linear-gradient(to bottom, rgba(200,6,6,1)30% ,rgba(250,6,6,1)); 
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */}
+.form-submit:hover { opacity: 0.7; cursor: pointer }
+INPUT.inputError,
+SELECT.inputError { border: 1px solid #F00 !important; }
+
+::-webkit-input-placeholder { /* WebKit browsers */
+ color:    #737373;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color:    #737373;
+ opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color:    #737373;
+ opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+ color:    #737373;
+}
+.input-group-addon { padding: 5px 10px; font-size: 11px; font-weight: normal; line-height: 1; color: #555; text-align: center; background-color: #484848; border: 1px solid #CCC; border-radius: 4px; }
+input[type=checkbox]:not(old),
+input[type=radio ]:not(old) { width: 28px; margin : 0; padding : 0; opacity : 0; /* float: left; */ height: 1px; }
+input[type=checkbox]:not(old) + label,
+input[type=radio ]:not(old) + label { display : inline-block; padding-left: 22px; background : url('../images/form/checks.png') no-repeat 0 0; line-height: 15px; cursor: pointer;color: #fff;}
+input[type=checkbox]:not(old):checked + label { background-position: 0 -15px; }
+input[type=radio]:not(old):checked + label { background-position: 0 -15px; }
+.ajaxloader { width: 80px; text-align: center; margin: auto; }
+.bubblingG { text-align: center; width: 80px; height: 50px; }
+.bubblingG span { display: inline-block; vertical-align: middle; width: 10px; height: 10px; margin: 25px auto; background: #173c6e; -moz-border-radius: 50px; -moz-animation: bubblingG 1.3s infinite alternate; -webkit-border-radius: 50px; -webkit-animation: bubblingG 1.3s infinite alternate; -ms-border-radius: 50px; -ms-animation: bubblingG 1.3s infinite alternate; -o-border-radius: 50px; -o-animation: bubblingG 1.3s infinite alternate; border-radius: 50px; animation: bubblingG 1.3s infinite alternate; }
+#bubblingG_1 { -moz-animation-delay: 0s; -webkit-animation-delay: 0s; -ms-animation-delay: 0s; -o-animation-delay: 0s; animation-delay: 0s; }
+#bubblingG_2 { -moz-animation-delay: 0.39s; -webkit-animation-delay: 0.39s; -ms-animation-delay: 0.39s; -o-animation-delay: 0.39s; animation-delay: 0.39s; }
+#bubblingG_3 { -moz-animation-delay: 0.78s; -webkit-animation-delay: 0.78s; -ms-animation-delay: 0.78s; -o-animation-delay: 0.78s; animation-delay: 0.78s; }
+.radiovalidate { POSITION: ABSOLUTE; right: -16px; top: 6px; }
+ .izin {
+	   margin: auto;
+  width: 200px;
+	 }
+ @-moz-keyframes bubblingG { 0% {
+width: 10px;
+height: 10px;
+background-color:#173c6e;
+-moz-transform: translateY(0);
+}
+ 100% {
+width: 24px;
+height: 24px;
+background-color:#579bcd;
+-moz-transform: translateY(-21px);
+}
+}
+ @-webkit-keyframes bubblingG { 0% {
+width: 10px;
+height: 10px;
+background-color:#173c6e;
+-webkit-transform: translateY(0);
+}
+ 100% {
+width: 24px;
+height: 24px;
+background-color:#579bcd;
+-webkit-transform: translateY(-21px);
+}
+}
+ @-ms-keyframes bubblingG { 0% {
+width: 10px;
+height: 10px;
+background-color:#173c6e;
+-ms-transform: translateY(0);
+}
+ 100% {
+width: 24px;
+height: 24px;
+background-color:#579bcd;
+-ms-transform: translateY(-21px);
+}
+}
+ @-o-keyframes bubblingG { 0% {
+width: 10px;
+height: 10px;
+background-color:#173c6e;
+-o-transform: translateY(0);
+}
+ 100% {
+width: 24px;
+height: 24px;
+background-color:#579bcd;
+-o-transform: translateY(-21px);
+}
+}
+ @keyframes bubblingG { 0% {
+
+width: 10px;
+height: 10px;
+background-color:#173c6e;
+transform: translateY(0);
+}
+ 100% {
+width: 24px;
+height: 24px;
+background-color:#579bcd;
+transform: translateY(-21px);
+}
+}

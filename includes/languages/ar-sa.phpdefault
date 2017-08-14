@@ -1,0 +1,130 @@
+<?php
+
+$Lang = array();
+
+// Header
+$Lang['bizi_arayin'] = 'BİZİ ARAYIN!';
+$Lang['turkce'] = 'Türkçe';
+$Lang['arapca'] = 'Arapça';
+$Lang['ingilizce'] = 'İngilizce';
+
+// Header Menü
+$Lang['menu_anasayfa'] = 'ARABIC';
+$Lang['menu_projeler'] = 'ARABIC';
+$Lang['menu_kurumsal'] = 'ARABIC';
+$Lang['menu_hizmetlerimiz'] = 'ARABIC';
+$Lang['menu_blog'] = 'ARABIC';
+$Lang['menu_iletisim'] = 'ARABIC';
+
+// Footer
+$Lang['footer_aciklama'] = '2006 yılının Ağustos ayında Arda Kutsal tarafından kurulan Webrazzi, internet alanında Türkiye ve dünyadaki gelişmeleri inceleyerek analiz eden Türkiye’nin lider teknoloji blogudur. Sektöre yön veren birçok profesyonelin günlük olarak takip ettiği Webrazzi, güncel yeni web girişimlerinden bu alandaki yatırım haberlerine kadar geniş kapsamlı yazı ve analizlere yer vermektedir.';
+$Lang['footer_linkler'] = 'Linkler';
+$Lang['footer_kurumsal'] = 'Kurumsal';
+$Lang['footer_hizliiletisim'] = 'Hızlı İletişim';
+$Lang['footer_siteharitasi'] = 'Site Haritası';
+$Lang['footer_kullanimkosullari'] = 'Kullanım Koşulları';
+$Lang['footer_gizlilikbildirimi'] = 'Gizlilik Bildirimi';
+
+// Form
+$Lang['form_adsoyad'] = 'Ad Soyad *';
+$Lang['form_eposta'] = 'E-Posta *';
+$Lang['form_telefon'] = 'GSM *';
+$Lang['form_mesaj'] = 'Mesajınız';
+$Lang['form_gonder'] = 'Formu Gönder';
+
+// Scrool kaydığında çıkan form başlığı
+$Lang['scroolform_title'] = 'İletişime Geçin';
+$Lang['scroolform_desc'] = 'Bize ulaşmanız için en hızlı yol!';
+
+// Anasayfa slider altı mavi slogan
+$Lang['mavislogan_baslik'] = 'Turkiye\'de ki Gercek Eviniz!';
+$Lang['mavislogan_aciklama'] = 'Daha oncesinde esini veya benzerini gormediginiz konutlarimiz ile sizleri ve ailenizi mutlu ediyoruz';
+
+// Anasayfa blok başlıkları
+$Lang['blok_hizmetlerimiz'] = 'Hizmetlerimiz';
+$Lang['blok_projeler'] = 'Projeler';
+$Lang['blok_bizkimiz'] = 'Biz Kimiz';
+$Lang['blok_bizinedensecmelisiniz'] = 'Bizi Neden Seçmelisiniz';
+$Lang['blok_blog'] = 'Blog';
+
+// Anasayfa load more (daha fazla ... ) yazıları
+$Lang['loadmore_blog'] = 'Daha Fazla Blog Yazısı';
+$Lang['loadmore_tumprojeler'] = 'Tüm Projeleri Görüntüle';
+
+//Blog kutuları için devamını oku yazısı
+$Lang['blogkutusu_devaminioku'] = 'Devamını Oku »';
+
+// Biz kimiz açıklaması
+$Lang['bizkimiz_aciklama'] = 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.';
+
+// Bizi neden seçmelisiniz TAB başlık ve içerikleri [ HTML KULLANILABİLİR ve Kullanmak istemediğiniz tabın başlığını boş bırakın. '']
+
+// [ TAB 1 ]
+$Lang['tab1_baslik'] = 'Güvenilirlik';
+$Lang['tab1_aciklama'] = 'Tab 1 içerik & açıklaması.';
+
+// [ TAB 2 ]
+$Lang['tab2_baslik'] = 'Uygun Fiyat';
+$Lang['tab2_aciklama'] = 'Tab 2 içerik & açıklaması.';
+
+// [ TAB 3 ]
+$Lang['tab3_baslik'] = 'Müşteri Dostu';
+$Lang['tab3_aciklama'] = 'Tab 3 içerik & açıklaması.';
+
+// [ TAB 4 ]
+$Lang['tab4_baslik'] = 'En İyi Fiyat Garantisi';
+$Lang['tab4_aciklama'] = 'Tab 4 içerik & açıklaması.';
+
+// [ TAB 5 ]
+$Lang['tab5_baslik'] = '';
+$Lang['tab5_aciklama'] = '';
+
+// Slider altı arama kısımı
+$Lang['arama_sehir'] = 'Şehir';
+$Lang['arama_projedurumu'] = 'Proje Durumu';
+$Lang['arama_konuttipi'] = 'Konut Tipi';
+$Lang['arama_ilantipi'] = 'İlan Tipi';
+$Lang['arama_enazfiyat'] = 'Min. Fiyat';
+$Lang['arama_enfazlafiyat'] = 'Max. Fiyat';
+$Lang['arama_aramakelimesi'] = 'Anahtar Kelime';
+$Lang['arama_aramayap'] = 'Arama Yap';
+$Lang['arama_projedurumu_hazir'] = 'Hazır';
+$Lang['arama_projedurumu_devamediyor'] = 'Devam Ediyor';
+
+
+
+// Proje Sayfası
+$Lang['breadcrumb_anasayfa'] = 'Anasayfa';
+$Lang['breadcrumb_turkeyrealestate'] = 'Turkey Real Estate';
+//$Lang['favorilere_ekle'] = 'Favorilere Ekle';
+$Lang['fiyat_minimum'] = 'Min.';
+$Lang['box_aciklama'] = 'Açıklama';
+$Lang['genel_ozellikleri'] = 'Genel Özellikler';
+$Lang['guvenlik_ozellikleri'] = 'Güvenlik Özellikleri';
+$Lang['sosyal_imkanlar'] = 'Sosyal İmkanlar';
+$Lang['spor_aktiviteleri'] = 'Spor Aktiviteleri';
+$Lang['teknik_ozellikler'] = 'Teknik Özellikler';
+$Lang['box_tanitim_videosu'] = 'Tanıtım Videosu';
+$Lang['box_konum'] = 'Konum';
+$Lang['box_etrafindanevar'] = 'Etrafındakiler';
+$Lang['box_dosyalar'] = 'Dosyalar';
+$Lang['box_bolgeraporu'] = 'Bölge Raporu';
+$Lang['box_formbilgialin'] = 'Bilgi Alın';
+$Lang['box_katplanlari'] = 'Kat Planları';
+$Lang['box_benzerilanlar'] = 'İlginizi Çekebilir &rsaquo;';
+$Lang['proje_sidebar_arama'] = 'Arama';
+$Lang['proje_sidebar_formbaslik'] = 'Hemen Bilgi Alın!';
+
+// Hata Mesajları
+$Lang['hatamesajlari_telefonnumarasigecersiz'] = 'Telefon Numarası Geçersiz';
+$Lang['hatamesajlari_basarili'] = 'Başarılı';
+$Lang['hatamesajlari_hata'] = 'Hata';
+$Lang['hatamesajlari_formbasariylagonderildi'] = 'Form Başarıyla Gönderildi.';
+
+// Listeleme sayfası 
+$Lang['listeleme_anabaslik'] = 'قائمة المشاريع';
+
+// İletişim Sayfası
+$Lang['iletisimsayfasi_adres'] = 'Arapca Adres';
+
+?>

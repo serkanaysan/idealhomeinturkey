@@ -1,0 +1,102 @@
+RewriteEngine On
+
+# for main domain
+RewriteCond %{HTTP_HOST} ^(www\.)?idealhomeinturkey\.com$ [NC]
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://idealhomeinturkey.com%{REQUEST_URI} [R=301,L,NE]
+
+# for sub domain
+RewriteCond %{HTTP_HOST} ^(www\.)?apps\.idealhomeinturkey\.com$ [NC]
+RewriteCond %{HTTPS} on [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ http://apps.idealhomeinturkey.com%{REQUEST_URI} [R=301,L,NE]
+
+#Ajax form
+RewriteRule ^sendform$ includes/formCheck.php
+RewriteRule ^formsuccess$ includes/formSuccess.php
+
+ErrorDocument 404 https://idealhomeinturkey.com/404
+
+#404 sayfa yönlendirmesi
+RewriteRule ^404$ 404.php [L,QSA]
+
+
+
+##### INGILIZCE ICIN SAYFA YONLENDIRMELERI
+
+#Anasayfa English
+RewriteRule ^en-us$ index.php?lang_sef=en-us [L,QSA]
+RewriteRule ^en-us/$ index.php?lang_sef=en-us [L,QSA]
+
+#Proje Listeleme >> Arama kriterli
+RewriteRule ^en-us/turkey-real-estate/home/(.*)$ list.php?lang_sef=en-us&parameters=$1 [L,QSA]
+
+#Proje Sayfası English
+RewriteRule ^en-us/turkey-real-estate/(.*)/(.*)/$ proje.php?lang_sef=en-us&city=$1&project_id=$2 [L,QSA]
+RewriteRule ^en-us/turkey-real-estate/(.*)/(.*)$ proje.php?lang_sef=en-us&city=$1&project_id=$2 [L,QSA]
+
+#Proje Listeleme
+RewriteRule ^en-us/turkey-real-estate$ list.php?lang_sef=en-us [L,QSA]
+RewriteRule ^en-us/turkey-real-estate/$ list.php?lang_sef=en-us [L,QSA]
+
+#İçerik Sayfası
+RewriteRule ^en-us/pages/(.*)/ content.php?lang_sef=en-us&sef=$1 [L,QSA]
+RewriteRule ^en-us/pages/(.*) content.php?lang_sef=en-us&sef=$1 [L,QSA]
+
+#İletişim
+RewriteRule ^en-us/contact$ contact.php?lang_sef=en-us [L,QSA]
+RewriteRule ^en-us/contact/$ contact.php?lang_sef=en-us [L,QSA]
+
+#Sitemap
+RewriteRule ^en-us/sitemap.xml$ ihit_sitemap.php?lang_sef=en-us [L,QSA]
+
+
+
+
+##### ARAPCA ICIN SAYFA YONLENDIRMELERI
+
+#Anasayfa Arapca
+RewriteRule ^ar-sa$ index.php?lang_sef=ar-sa [L,QSA]
+RewriteRule ^ar-sa/$ index.php?lang_sef=ar-sa [L,QSA]
+
+#Proje Listeleme >> Arama kriterli
+RewriteRule ^ar-sa/تركيا-العقارات/home/(.*)$ list.php?lang_sef=ar-sa&parameters=$1 [L,QSA]
+
+#Proje Sayfası Arapca
+RewriteRule ^ar-sa/تركيا-العقارات/(.*)/(.*)/$ proje.php?lang_sef=ar-sa&city=$1&project_id=$2 [L,QSA]
+RewriteRule ^ar-sa/تركيا-العقارات/(.*)/(.*)$ proje.php?lang_sef=ar-sa&city=$1&project_id=$2 [L,QSA]
+
+#Proje Listeleme
+RewriteRule ^ar-sa/تركيا-العقارات$ list.php?lang_sef=ar-sa [L,QSA]
+RewriteRule ^ar-sa/تركيا-العقارات/$ list.php?lang_sef=ar-sa [L,QSA]
+
+#İçerik Sayfası
+RewriteRule ^ar-sa/الصفحات/(.*)/ content.php?lang_sef=ar-sa&sef=$1 [L,QSA]
+RewriteRule ^ar-sa/الصفحات/(.*) content.php?lang_sef=ar-sa&sef=$1 [L,QSA]
+
+#İletişim
+RewriteRule ^ar-sa/التواصل$ contact.php?lang_sef=ar-sa [L,QSA]
+RewriteRule ^ar-sa/التواصل/$ contact.php?lang_sef=ar-sa [L,QSA]
+
+#Sitemap
+RewriteRule ^ar-sa/sitemap.xml$ ihit_sitemap.php?lang_sef=ar-sa [L,QSA]
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/gif "access plus 4 weeks"
+ExpiresByType image/jpg "access plus 4 weeks"
+ExpiresByType image/jpeg "access plus 4 weeks"
+ExpiresByType image/png "access plus 4 weeks"
+ExpiresByType image/bmp "access plus 4 weeks"
+ExpiresByType text/css "access plus 4 weeks"
+ExpiresByType application/javascript "access plus 4 weeks"
+ExpiresByType application/x-javascript "access plus 4 weeks"
+ExpiresByType text/javascript "access plus 4 weeks"
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# NOTE this account's php is controlled via FPM and the vhost, this is a place holder.
+# Do not edit. This next line is to support the cPanel php wrapper (php_cli).
+# AddType application/x-httpd-ea-php56 .php .phtml
+# php -- END cPanel-generated handler, do not edit

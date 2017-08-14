@@ -1,0 +1,197 @@
+
+@media only screen and (max-width:560px) {
+	.slogan {
+		font-size:24px;
+	}
+	.slogannew {
+		font-size:24px;
+		bottom: 54px;
+	}
+}
+
+/*
+	660px altında ise 
+*/
+
+@media only screen and (max-width:768px) {
+
+	.bx-thumbs{
+		
+		position: initial;
+		float:left;
+		height: auto!important;
+		
+	}
+	
+	.form-holder{
+		
+		/*margin-top:150px!important;*/
+		
+	}
+	
+	.slogannew{
+		
+		display:none;
+		
+	}
+	.slogan{
+		
+		display:none;
+		
+	}
+	
+	.slogan1_none{
+		
+		display:inline-block;
+		
+	}
+	.slogan2_none{
+		
+		display:inline-block;
+		
+	}
+
+}
+
+@media only screen and (max-width:337px) {
+	
+	.form-holder{
+		
+		/*margin-top:215px!important;*/
+		
+	}
+
+}
+
+@media only screen and (max-width:820px) {
+	
+	.bx-container img{
+		
+		height: 450px!important;
+		
+	}
+	
+	.bx-thumbs a{
+
+		border:0;
+		opacity:1;
+		-webkit-border-radius:0;
+		border-radius:0;
+		
+
+	}
+	
+	.bx-thumbs{
+		
+		bottom:0;
+		position:relative;
+		margin-left:6%;
+		background-color: #fff!important;
+		float:left;
+		width:100%;
+		padding-left: 25px;
+		
+	}
+		
+	.form-holder{
+		
+		position:static;
+		width:100%;
+		/*margin-top:75px;*/
+		
+	}
+	
+	.bx-container {
+		position: static;
+		background-color: #fff!important;
+	}
+	
+	.bestprice {
+		
+		right: 0;
+		
+	}
+	
+}
+
+@media(min-width:821px) and (max-width:1000px) {
+	.bx-thumbs{
+		
+		width: 40%;
+		left: 0%;
+		margin-left: 0px;
+		float: left;
+		
+	}
+}
+
+@media(min-width:820px) and (max-width:1350px) {
+	.bestprice {
+		
+		right: initial;
+		margin-left:25px;
+		margin-top:75px;
+		
+	}
+}
+
+
+@media(min-width:660px) and (max-width:1000px) {
+		
+.slogannew{
+	
+	bottom:332px;
+	
+}
+
+.slogan{
+	
+	bottom:270px;
+	
+}
+
+}
+
+@media(min-width:660px) {
+		
+.bx-thumbs{
+	
+	height: auto!important;
+	
+}
+
+}
+
+@media(min-width:660px) and (max-width:820px) {
+		
+
+	.form-holder{
+		
+		/*margin-top:75px;*/
+		
+	}
+
+}
+
+@media only screen and (max-width:1195px) {
+	
+	.bx-thumbs{
+		
+		left: 0%;
+		margin-left:0px;
+		
+	}
+
+}
+
+@media only screen and (max-width: 479px) {
+	
+	
+	
+}
+
+@media only screen and (max-width: 320px) {
+	
+	
+	
+}

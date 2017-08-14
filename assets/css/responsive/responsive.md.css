@@ -1,0 +1,19 @@
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+	#home-cover-content {
+		width: 100%;
+		padding: 0 15px
+	}
+	#home-cover-content h1 {
+		white-space: normal;
+		font-size: 30px
+	}
+	#home-cover-content p {
+		font-size: 18px
+	}
+	#home-cover-content .btn-home-cover {
+		padding: 10px 25px;
+		font-size: 18px
+	}
+	
+}

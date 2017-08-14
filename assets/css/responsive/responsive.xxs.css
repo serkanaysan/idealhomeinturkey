@@ -1,0 +1,154 @@
+@media screen and (max-width: 576px) {
+	
+	.gm-style img {
+		max-width: 100%!important;
+	}
+	.map-info .map-info-title{
+		text-align: center;
+		font-size: 1.4em;
+		margin-bottom: 0;
+	}
+	.map-info .map-info-price{
+	    text-align: center!important;
+		font-size: 1.2em;
+	}
+	.map-info .map-info-coast{
+		overflow: visible;
+	}
+	
+	#footer .footer-title{
+		margin-top:15px!important;
+	}
+	#header .header-left .logo {
+		margin-top: 0px!important;
+		padding:8px!important;
+	}
+	
+	.project-full-slide-img{
+		height:350px!important;
+	}
+	.project-slider-modal{
+		width:100%!important;
+		margin-top: 20%;
+	}
+	#writeus .modal-dialog {
+		width: 95%!important;
+	}
+	#listcontactus .modal-dialog {
+		width: 95%!important;
+	}
+	.contactform-leftmain{
+		padding:0!important;
+		height: auto!important;
+		background: none!important;
+		box-shadow: none!important;
+		border: 0!important;
+	}
+	
+	.contactform-maingrid{
+		transform: none!important;
+		border-left: 0!important;
+	}
+	
+	.contactform-another{
+		padding-right: 0!important;
+	}
+	
+	#footer .footer-social .footer-social-item{
+		width:30px;
+		height:30px;
+		line-height:30px;
+	}
+	.page-title span{
+	    padding: 0 10px;
+	}
+	
+	#home-cover-content {
+		width: 100%;
+		padding: 0 15px;
+		text-align: left;
+		top: auto;
+		left: 0;
+		bottom: 0;
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+		padding: 15px;
+		margin: 0
+	}
+	#home-cover-content h1 {
+		white-space: normal;
+		font-size: 36px
+	}
+	#home-cover-content p {
+		font-size: 18px
+	}
+	#home-cover-content .btn-home-cover {
+		margin: 0 10px 0 0;
+		padding: 10px 25px;
+		font-size: 18px
+	}
+	.properties-table>.col-properties-half {
+		padding: 0 !important
+	}
+	.properties-table .col-properties-half {
+		float: left;
+		width: 100%;
+		padding: 0 5px
+	}
+	.properties-table .col-properties-full {
+		float: left;
+		width: 100%;
+		padding: 0 5px
+	}
+	.properties-table .row-properties-half {
+		position: relative;
+		height: 315px;
+		padding: 7.5px 0
+	}
+	.properties-table .row-properties-full {
+		position: relative;
+		height: 315px;
+		padding: 7.5px 0
+	}
+	#why .btn-tab {
+		float: none;
+		display: block !important;
+		width: auto !important;
+		padding: 2px 0
+	}
+	#why .tab-item p {
+		margin: 10px 0
+	}
+	#footer .footer-social {
+		text-align: center;
+		margin-top: 20px
+	}
+	#writeus .modal-dialog {
+		width: auto
+	}
+	#single .col-single {
+		float: none;
+		width: 100%
+	}
+	#page-title .page-title-text {
+		width: 80%;
+		text-align: center
+	}
+	#header {
+		position: fixed !important;
+		top: 0;
+		left: 0;
+		z-index: 999
+	}
+	.header-left {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%)
+	}
+	body {
+		padding-top: 55px;
+	}
+	
+}

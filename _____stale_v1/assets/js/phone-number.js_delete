@@ -1,0 +1,44 @@
+$("document").ready(function(){
+
+	//$("#phone-number").intlTelInput();
+
+    var telInput = $("#phone-number"),
+        errorMsg = $("#error-msg"),
+        validMsg = $("#valid-msg");
+    telInput.intlTelInput({
+        autoHideDialCode: true,
+        autoPlaceholder: true,
+        customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
+            return "e.g. " + selectedCountryPlaceholder;
+        },
+        separateDialCode: false,
+        nationalMode: false,
+		initialCountry: "auto",
+	  geoIpLookup: function(callback) {
+		$.get('http://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+		  var countryCode = (resp && resp.country) ? resp.country : "";
+		  callback(countryCode);
+		});
+	  },
+	  utilsScript: "assets/js/utils.js"
+    });
+    var reset = function() {
+        telInput.removeClass("phone-error");
+        errorMsg.addClass("hide");
+        validMsg.addClass("hide");
+    };
+    telInput.blur(function() {
+        reset();
+        if ($.trim(telInput.val())) {
+            if (telInput.intlTelInput("isValidNumber")) {
+                validMsg.removeClass("hide");
+            } else {
+                swal("Telefon Numarası Geçersiz", " ", "error");
+                telInput.addClass("phone-error");
+                errorMsg.removeClass("hide");
+            }
+        }
+    });
+    telInput.on("keyup change", reset);
+	
+});

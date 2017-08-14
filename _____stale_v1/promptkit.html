@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PromptKit</title>
+</head>
+<body>
+<script>
+    (function(){
+
+        function GET() {
+            var vars    = {};
+            var parts   = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        function PM(data) { if (window && window.parent && "postMessage" in window.parent) { parent.postMessage( JSON.stringify((function(){ data.id="connect" ; return data })()) , "*"); } }
+
+        switch(Notification.permission){
+            case "default":
+
+                //console.log("cd : default");
+
+                // kayıt yapılacak ise !
+                if( GET()["tagid"] ){
+                    return;
+                }
+
+                PM({permission:"default"});
+                break;
+            case "granted":
+
+                //console.log("cd : granted");
+
+                navigator.serviceWorker.ready.then(function(serviceWorkerRegistration) {
+
+                    serviceWorkerRegistration.pushManager.getSubscription().then(function(subscription) {
+
+
+                        if (!subscription) {
+                            // kayıt id si yok kayıt edebiliriz  redirect parent.   buda olabilir  PM({permission:"default"});
+                            // PM({permission:"granted"});
+                            return;
+                        }
+
+                        var sid = getSubscriptionID(subscription);
+
+                        PM({permission:"granted", sid:sid });
+
+                        if( GET()["tagid"] )
+                        {
+                            var sid = getSubscriptionID(subscription);
+                            //console.log("ID", sid );
+                            var i = new Image();
+                            i.src = "https://push.connect.digital/tags/add?id="+sid+"&tag-id="+GET()["tagid"]+"&appkey="+GET()["appkey"];
+                            return;
+                        }
+                    });
+                });
+                break;
+            case "denied":
+                //console.log('cd : denied');
+                //PM({permission:"denied"});
+                break;
+        }
+
+        function getSubscriptionID( pushSubscription ){
+            var endpointSections 	= pushSubscription.endpoint.split('/');
+            var subscriptionId 		= endpointSections[endpointSections.length - 1];
+            return subscriptionId;
+        }
+
+    })();
+</script>
+</body>
+</html>
